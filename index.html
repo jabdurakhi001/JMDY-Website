@@ -3,227 +3,305 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JMDY Group</title>
-  <meta name="description" content="JMDY Group is a holding company that owns and oversees businesses across trucking & logistics, consulting, and AI automation." />
-  <meta name="theme-color" content="#0b0b0c" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b0b0c'/><path d='M18 42V22h6v14h10V22h6v20H18z' fill='%23f7f7f5'/></svg>">
+  <title>JMDY Group — Holding Company</title>
+  <meta name="description" content="JMDY Group is a holding company. It does not provide services to the public. All operations are conducted by its subsidiaries." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optional Google Font. Remove if you prefer system fonts only. -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="header">
-    <nav class="nav" aria-label="Primary">
-      <a class="brand" href="#top" aria-label="JMDY Group home">
-        <span class="mark" aria-hidden="true">J</span>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="JMDY Group home">
+        <span class="logo" aria-hidden="true"></span>
         <span class="brand-text">JMDY Group</span>
       </a>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#purpose">Purpose</a>
-        <a href="#industries">Industries</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact" class="btn btn-sm">Contact</a>
-      </div>
-
-      <button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-        <span aria-hidden="true">Menu</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="hamburger" aria-hidden="true"></span>
       </button>
-    </nav>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#contact" class="btn btn-primary btn-sm">Contact Us</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Holding company</p>
-            <h1>JMDY Group</h1>
-            <p class="lead">
-                <strong>JMDY Group is a holding company.</strong>
-                It does not provide services to the public, does not operate businesses directly,
-                and does not engage in commercial activities.
-                All operations and revenue-generating activities are conducted exclusively by its subsidiaries.
-              </p>
 
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-badge">HOLDING COMPANY</div>
 
-            <div class="actions">
-              <a class="btn" href="#portfolio">View portfolio</a>
-              <a class="btn btn-ghost" href="#purpose">How we operate</a>
-            </div>
+        <h1 class="hero-title">JMDY Group</h1>
 
-            <dl class="meta" aria-label="Company summary">
-              <div>
-                <dt>Role</dt>
-                <dd>Ownership & governance</dd>
-              </div>
-              <div>
-                <dt>Focus</dt>
-                <dd>Long-term stewardship</dd>
-              </div>
-              <div>
-                <dt>Approach</dt>
-                <dd>Simple structure, clear oversight</dd>
-              </div>
-            </dl>
-          </div>
-
-          <div class="hero-card" role="presentation">
-            <div class="card">
-              <div class="card-title">Industries represented</div>
-              <ul class="taglist">
-                <li>Trucking / Logistics</li>
-                <li>Consulting</li>
-                <li>AI Automation</li>
-              </ul>
-              <p class="card-note">
-                Portfolio details can be shared on request.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="purpose">
-      <div class="container">
-        <div class="section-head">
-          <h2>Purpose</h2>
-          <p class="subhead">
-            JMDY Group is a parent entity designed to hold equity interests, manage structure, and provide governance oversight.
-          </p>
-        </div>
-
-        <div class="grid-3">
-          <div class="panel">
-            <h3>Ownership</h3>
-            <p>
-              Maintain clean ownership records and a clear chain of control across entities.
-            </p>
-          </div>
-          <div class="panel">
-            <h3>Structure</h3>
-            <p>
-              Organize entities for risk isolation, clarity, and long-term durability.
-            </p>
-          </div>
-          <div class="panel">
-            <h3>Oversight</h3>
-            <p>
-              High-level governance and reporting—without representing public-facing operations.
-            </p>
-          </div>
-        </div>
-
-        <p class="fineprint">
-          <strong>Note:</strong> JMDY Group is not a carrier, broker, consulting firm, or automation vendor.
-          Operating activity (if any) occurs within its subsidiaries.
+        <p class="hero-subtitle">
+          <strong>JMDY Group is a holding company.</strong> It does not provide services to the public and does not operate businesses directly.
+          All operations and revenue-generating activities are conducted exclusively by its subsidiaries.
         </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#portfolio">Explore Portfolio</a>
+          <a class="btn btn-secondary" href="#contact">Contact Us</a>
+        </div>
       </div>
+
+      <div class="hero-swoosh" aria-hidden="true"></div>
     </section>
 
-    <section class="section" id="industries">
+    <!-- “FOCUS AREAS” (same look as “Our Expertise” but holding-company safe) -->
+    <section class="section" id="focus">
       <div class="container">
         <div class="section-head">
-          <h2>Industries</h2>
-          <p class="subhead">
-            We hold companies operating in the following areas.
+          <h2 class="section-title">Focus Areas</h2>
+          <p class="section-subtitle">
+            The subsidiaries we hold equity in operate across the following industries. The holding company does not perform operations in these areas.
           </p>
         </div>
 
-        <div class="stack">
-          <article class="row">
-            <div class="row-left">
-              <h3>Trucking & Logistics</h3>
-              <p>Transportation, dispatch, fleet operations, and related logistics services through operating entities.</p>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon">
+              <!-- simple inline icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7v2a5 5 0 0 0 5 5h1v4H9v2h6v-2h-2v-4h1a5 5 0 0 0 5-5V9a7 7 0 0 0-7-7Zm5 9a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3V9a5 5 0 0 1 10 0v2Z"/></svg>
             </div>
-            <div class="row-right">
-              <span class="pill">Operating subsidiary</span>
-            </div>
+            <h3 class="card-title">AI Automation</h3>
+            <p class="card-text">
+              Subsidiaries may build AI-driven workflow automation and internal tooling. JMDY Group does not offer these services directly.
+            </p>
+            <a class="card-link" href="#portfolio">Learn more →</a>
           </article>
 
-          <article class="row">
-            <div class="row-left">
-              <h3>Consulting</h3>
-              <p>Professional advisory and internal business services performed by separate portfolio companies.</p>
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h12v9H3V7Zm13 2h2.382a2 2 0 0 1 1.789 1.106L22 13v3a2 2 0 0 1-2 2h-2a2 2 0 1 1-4 0H8a2 2 0 1 1-4 0H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Zm0 2v4h4v-1.764L19.382 11H16Z"/></svg>
             </div>
-            <div class="row-right">
-              <span class="pill">Operating subsidiary</span>
-            </div>
+            <h3 class="card-title">Trucking & Logistics</h3>
+            <p class="card-text">
+              Subsidiaries may operate transportation and logistics businesses. JMDY Group does not act as a carrier, broker, or logistics provider.
+            </p>
+            <a class="card-link" href="#portfolio">Learn more →</a>
           </article>
 
-          <article class="row">
-            <div class="row-left">
-              <h3>AI Automation</h3>
-              <p>Workflow automation and AI systems offered by dedicated portfolio companies—not by the holding company.</p>
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16v2H4v-2Zm2-4h3v3H6v-3Zm5-6h3v9h-3V9Zm5 3h3v6h-3v-6ZM5 3h14a2 2 0 0 1 2 2v2H3V5a2 2 0 0 1 2-2Z"/></svg>
             </div>
-            <div class="row-right">
-              <span class="pill">Operating subsidiary</span>
-            </div>
+            <h3 class="card-title">Consulting</h3>
+            <p class="card-text">
+              Subsidiaries may provide advisory and professional services. JMDY Group itself does not contract with the public for consulting.
+            </p>
+            <a class="card-link" href="#portfolio">Learn more →</a>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="portfolio">
-      <div class="container">
-        <div class="section-head">
-          <h2>Portfolio</h2>
-          <p class="subhead">
-            Add subsidiary names and links below when you’re ready.
-          </p>
-        </div>
-
-        <div class="grid-2">
-          <div class="panel panel-muted">
-            <h3>Subsidiary #1</h3>
-            <p class="muted">Name / state / brief description</p>
-            <p class="muted">Website (optional)</p>
-          </div>
-          <div class="panel panel-muted">
-            <h3>Subsidiary #2</h3>
-            <p class="muted">Name / state / brief description</p>
-            <p class="muted">Website (optional)</p>
-          </div>
-          <div class="panel panel-muted">
-            <h3>Subsidiary #3</h3>
-            <p class="muted">Name / state / brief description</p>
-            <p class="muted">Website (optional)</p>
-          </div>
-          <div class="panel panel-muted">
-            <h3>Subsidiary #4</h3>
-            <p class="muted">Name / state / brief description</p>
-            <p class="muted">Website (optional)</p>
-          </div>
-        </div>
-
-        <div class="callout">
-          <p><strong>Optional:</strong> Want a “private mode” portfolio (only visible with a URL parameter or password page)?
-            I can add that too.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <!-- PORTFOLIO (styled like your second screenshot) -->
+    <section class="section section-muted" id="portfolio">
       <div class="container">
         <div class="section-head">
-          <h2>Contact</h2>
-          <p class="subhead">
-            For ownership, governance, or portfolio inquiries.
+          <h2 class="section-title">Our Portfolio</h2>
+          <p class="section-subtitle">
+            Equity holdings across multiple industries. Specific subsidiary details can be provided upon request.
           </p>
         </div>
 
-        <div class="grid-2">
-          <div class="panel">
+        <!-- Group 1 -->
+        <div class="portfolio-group">
+          <div class="portfolio-label">
+            <span class="portfolio-bar" aria-hidden="true"></span>
+            <div>
+              <h3 class="portfolio-title">Artificial Intelligence</h3>
+              <p class="portfolio-subtitle">
+                Portfolio companies associated with automation and intelligent systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="tile-grid">
+            <div class="tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7v10l10 5 10-5V7L12 2Zm0 2.2 7.7 3.85L12 11.9 4.3 8.05 12 4.2ZM4 9.7l7 3.5v7.2l-7-3.5V9.7Zm9 10.7v-7.2l7-3.5v7.2l-7 3.5Z"/></svg>
+              </div>
+              <div class="tile-name">Subsidiary Placeholder A</div>
+              <div class="tile-meta">Private / On request</div>
+            </div>
+
+            <div class="tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3Zm1 1.1V12h7.9A8 8 0 0 1 13 4.1Z"/></svg>
+              </div>
+              <div class="tile-name">Subsidiary Placeholder B</div>
+              <div class="tile-meta">Private / On request</div>
+            </div>
+
+            <div class="tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v4H7V2Zm-2 6h14v14H5V8Zm2 2v10h10V10H7Z"/></svg>
+              </div>
+              <div class="tile-name">Subsidiary Placeholder C</div>
+              <div class="tile-meta">Private / On request</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 2 -->
+        <div class="portfolio-group">
+          <div class="portfolio-label">
+            <span class="portfolio-bar" aria-hidden="true"></span>
+            <div>
+              <h3 class="portfolio-title">Logistics & Trucking</h3>
+              <p class="portfolio-subtitle">
+                Operating entities in transportation and logistics (not operated by the holding company).
+              </p>
+            </div>
+          </div>
+
+          <div class="tile-grid">
+            <div class="tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h12v9H3V7Zm13 2h2.382a2 2 0 0 1 1.789 1.106L22 13v3a2 2 0 0 1-2 2h-2a2 2 0 1 1-4 0H8a2 2 0 1 1-4 0H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Zm0 2v4h4v-1.764L19.382 11H16Z"/></svg>
+              </div>
+              <div class="tile-name">Subsidiary Placeholder D</div>
+              <div class="tile-meta">Private / On request</div>
+            </div>
+
+            <div class="tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4V6Zm2 2v8h12V8H6Z"/></svg>
+              </div>
+              <div class="tile-name">Subsidiary Placeholder E</div>
+              <div class="tile-meta">Private / On request</div>
+            </div>
+
+            <div class="tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V9a7 7 0 0 0-7-7Zm-5 7a5 5 0 0 1 10 0v6a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9Z"/></svg>
+              </div>
+              <div class="tile-name">Subsidiary Placeholder F</div>
+              <div class="tile-meta">Private / On request</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class="portfolio-group">
+          <div class="portfolio-label">
+            <span class="portfolio-bar" aria-hidden="true"></span>
+            <div>
+              <h3 class="portfolio-title">Consulting</h3>
+              <p class="portfolio-subtitle">
+                Advisory businesses operated by subsidiaries (not by the holding company).
+              </p>
+            </div>
+          </div>
+
+          <div class="tile-grid">
+            <div class="tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v2H4V4Zm0 4h10v2H4V8Zm0 4h16v2H4v-2Zm0 4h10v2H4v-2Z"/></svg>
+              </div>
+              <div class="tile-name">Subsidiary Placeholder G</div>
+              <div class="tile-meta">Private / On request</div>
+            </div>
+
+            <div class="tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5Z"/></svg>
+              </div>
+              <div class="tile-name">Subsidiary Placeholder H</div>
+              <div class="tile-meta">Private / On request</div>
+            </div>
+
+            <div class="tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16v2H4v-2Zm3-2V7h3v10H7Zm7 0V4h3v13h-3Z"/></svg>
+              </div>
+              <div class="tile-name">Subsidiary Placeholder I</div>
+              <div class="tile-meta">Private / On request</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">About</h2>
+          <p class="section-subtitle">
+            JMDY Group’s role is limited to ownership, structure, and governance oversight.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>What we are</h3>
+            <p>
+              A parent entity that holds equity interests and oversees corporate structure and governance.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>What we are not</h3>
+            <p>
+              Not a carrier, broker, logistics provider, consulting firm, or technology vendor. We do not contract with the public.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>How subsidiaries operate</h3>
+            <p>
+              Subsidiaries operate independently with their own branding, contracts, compliance, and customer relationships.
+            </p>
+          </div>
+        </div>
+
+        <div class="legal-callout">
+          <strong>Compliance note:</strong>
+          JMDY Group is a holding company and does not provide services to the public. All operating activities are conducted by subsidiaries.
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (working mailto + fallback) -->
+    <section class="section section-muted" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            For ownership, governance, or portfolio-related matters only. No service requests accepted at the holding-company level.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
             <h3>Email</h3>
-            <p class="muted">Replace with your real email.</p>
-            <p><a href="mailto:contact@jmdy.group">contact@jmdy.group</a></p>
+            <p class="muted">Use a dedicated holding-company inbox (recommended).</p>
+            <p class="email-display" id="emailDisplay">contact@jmdy.group</p>
           </div>
 
-          <form class="panel" id="contactForm" aria-label="Contact form">
+          <form class="contact-card" id="contactForm" aria-label="Contact form">
             <h3>Message</h3>
-            <p class="muted">This form uses your email client (no backend required).</p>
+            <p class="muted">Opens your email client (no backend). If blocked, we copy your message to clipboard.</p>
 
             <label>
               <span>Name</span>
@@ -240,17 +318,31 @@
               <textarea name="message" rows="4" required></textarea>
             </label>
 
-            <button class="btn" type="submit">Open email draft</button>
+            <button class="btn btn-primary" type="submit">Open email draft</button>
           </form>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> JMDY Group. All rights reserved.</p>
-      <p class="muted">Holding company website. No public services offered by JMDY Group.</p>
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="footer-logo" aria-hidden="true"></span>
+          <span>JMDY Group</span>
+        </div>
+        <div class="muted small">
+          © <span id="year"></span> JMDY Group. Holding company only. No public services offered. All operations are conducted by subsidiaries.
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </footer>
 
